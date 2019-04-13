@@ -1,0 +1,77 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <!-- The header of the main document being annotated -->
+      <fileDesc>
+         <titleStmt>
+            <title>My standoff NER sample</title>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <standOff>
+      <teiHeader>
+         <!-- The header of the annotation part -->
+      </teiHeader>
+      <!-- The annotations -->
+      <listAnnotation type="people">
+         <annotationBlock>
+            <person xml:id="JH">
+               <persName>Jon Hamon</persName>
+            </person>
+            <interp ana="#JH" inst="#s1 #s5"/>
+            <span from="#w5" to="#w5a" xml:id="s1"/>
+            <span from="#w15" xml:id="s5"/>
+         </annotationBlock>
+         <annotationBlock>
+            <person xml:id="CH">
+               <persName>Charles Hamon</persName>
+            </person>
+            <interp ana="#CH" inst="#s2 #s3 #s4"/>
+            <span from="#w9" xml:id="s2"/>
+            <span from="#w15" xml:id="s3"/>
+            <span from="#w26" xml:id="s4"/>
+         </annotationBlock>
+      </listAnnotation>
+   </standOff>
+   <text>
+      <body>
+         <!-- The text being annotated, possibly segmented (e.g. in <w>) -->
+         <p>
+            <w xml:id="w1">Some</w>
+            <w xml:id="w2">text</w>
+            <w xml:id="w3">talking</w>
+            <w xml:id="w4">about</w>
+            <w xml:id="w5">Jon</w>
+            <w xml:id="w5a">Hamon</w>
+            <w xml:id="w6">and</w>
+            <w xml:id="w7">his</w>
+            <w xml:id="w8">brother</w>
+            <w xml:id="w9">Charles</w>. 
+            <w xml:id="w10">And</w>
+            <w xml:id="w11">the</w>
+            <w xml:id="w12">time</w>
+            <w xml:id="w13">when</w>
+            <w xml:id="w14">both</w>
+            <w xml:id="w15">brothers</w>
+            <w xml:id="w16">died</w>
+            <w xml:id="w17">in</w>
+            <w xml:id="w18">a</w>
+            <w xml:id="w19">car</w>
+            <w xml:id="w20">crash</w>
+            <w xml:id="w21">together</w>
+            <w xml:id="w22">as</w>
+            <w xml:id="w23">the</w>
+            <w xml:id="w24">effect</w>
+            <w xml:id="w25">of</w>
+            <w xml:id="w26">Charles</w>
+            <w xml:id="w27">drunk</w>
+            <w xml:id="w28">driving</w>.
+         </p>
+      </body>
+   </text>
+</TEI>
