@@ -12,26 +12,32 @@
             <p>Information about the source</p>
          </sourceDesc>
       </fileDesc>
+      <profileDesc>
+         <particDesc>
+            <listPerson>
+               <person xml:id="JH">
+                  <persName>Jon Hamon</persName>
+               </person>
+               <person xml:id="CH">
+                  <persName>Charles Hamon</persName>
+               </person>
+            </listPerson>
+         </particDesc>
+      </profileDesc>
    </teiHeader>
    <standOff>
       <teiHeader>
          <!-- The header of the annotation part -->
+         <!-- list of agents responsible for the annotations -->
+         <respStmt><resp xml:id="AA">Anonymous Annotator</resp></respStmt>
+         
       </teiHeader>
       <!-- The annotations -->
       <listAnnotation type="people">
-         <annotationBlock>
-            <person xml:id="JH">
-               <persName>Jon Hamon</persName>
-            </person>
-            <interp ana="#JH" inst="#s1 #s5"/>
+         <annotationBlock> 
+            <annotation body="#JH" target="#s1 #s3" resp="#AA"/>
+            <annotation body="#CH" target="#s2 #s3 #s4" resp="#AA"/>
             <span from="#w5" to="#w5a" xml:id="s1"/>
-            <span from="#w15" xml:id="s5"/>
-         </annotationBlock>
-         <annotationBlock>
-            <person xml:id="CH">
-               <persName>Charles Hamon</persName>
-            </person>
-            <interp ana="#CH" inst="#s2 #s3 #s4"/>
             <span from="#w9" xml:id="s2"/>
             <span from="#w15" xml:id="s3"/>
             <span from="#w26" xml:id="s4"/>
